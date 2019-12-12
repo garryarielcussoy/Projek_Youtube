@@ -54,6 +54,19 @@ font-family: 'Roboto', sans-serif; */
     padding-top: 79px ;
 }
 
+.tempat_logo{
+    margin: 12px 0;
+}
+
+.logo-home-verbar:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.logo-home-verbar{
+    color: black;
+}
+
 .ver_bar h3{
     margin: 0;
     font-size: 15px;
@@ -68,8 +81,6 @@ font-family: 'Roboto', sans-serif; */
     background-color: white;
     height: 100%;
 }
-
-
 
 /*-------------------- Umum --------------------*/
 *{
@@ -114,12 +125,12 @@ body{
 
 .judul_utama{
     font-weight: 600;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .author, .waktu_upload{
     color:rgb(96, 96, 96);
-    font-size: 1em;
+    font-size: 0.6em;
 }
 /*-------------------- Show Video --------------------*/
 

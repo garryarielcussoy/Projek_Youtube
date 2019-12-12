@@ -24,8 +24,14 @@ def show(request, video_id):
 def search(request):
     kata = request.POST['cari']
     hasil_cari = Video.objects.filter(judul__icontains = kata)
+    if len(hasil_cari) != 0:
+        message = '2'
+    else:
+        message = '3'
+
     kirim = {
-        'kumpulan_video' : hasil_cari
+        'kumpulan_video' : hasil_cari,
+        'message' : message
     }
     return render(request, 'youtubeapp/index.html', kirim)
 
@@ -47,3 +53,11 @@ def upload_selesai(request):
     video_baru.save()
     # return render(request, 'youtubeapp/index.html', {})
     return HttpResponse('Success')
+
+def trending(request):
+    trend = Video.objects.all().order_by('-jumlah_view', 'judul')[:4]
+    kirim = {
+        'kumpulan_video' : trend,
+        'message' : '1'
+    }
+    return render(request, 'youtubeapp/index.html', kirim)

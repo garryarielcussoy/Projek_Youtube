@@ -15,3 +15,6 @@ class Video(models.Model):
 class URLUnik(models.Model):
     video_id = models.ForeignKey(Video, on_delete=models.CASCADE)
     unik = models.CharField(max_length=255, default='')
+
+    def __str__(self):
+        return self.video_id

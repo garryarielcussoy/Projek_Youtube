@@ -16,10 +16,10 @@ def show(request, video_id):
     }
     return render(request, 'youtubeapp/show.html', kirim)
 
-def search(request, kata):
-    cari = '%' + kata + '%'
-    hasil_cari = Video.objects.filter(string__contains=cari)
+def search(request):
+    kata = request.POST['cari']
+    hasil_cari = Video.objects.filter(judul__icontains = kata)
     kirim = {
-        'kumpulan_video' : hasil_cari,
+        'kumpulan_video' : hasil_cari
     }
     return render(request, 'youtubeapp/index.html', kirim)

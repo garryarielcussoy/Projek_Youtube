@@ -22,14 +22,17 @@
                     </div>
                     <div class="bar_search col-md-8">
                         <nav class="navbar">
-                            <form class="form-inline">
+
+                            <form class="form-inline" method="POST" action="{% url 'youtubeapp:search'%}">
+                                {% csrf_token %}
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">   
+                                        <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" name="cari">   
                                     </div>
-                                        <span class="input-group-text" id="basic-addon1"><img href="/" class="image_logo" src="{% static 'img/title/search.png' %}" alt=""></span>  
+                                    <button type="submit"><i class="fa fa-search"></i><img href="/" class="image_logo" src="{% static 'img/title/search.png' %}" alt=""></button>
                                 </div>
                             </form>
+
                         </nav>
                     </div>
                     <div class="bar_log col-md-2">

@@ -6,5 +6,5 @@ app_name = 'youtubeapp'
 urlpatterns = [
     path('', views.index, name="index"),
     path('video/<int:video_id>', views.show, name="show"),
-    path('video/<kata>/', views.search, name="search")
+    path('search/', views.search, name="search")
 ]

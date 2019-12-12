@@ -105,11 +105,12 @@ body{
 
 .judul{
     font-weight: 600;
+    font-size: 0.8em;
 }
 
 .author, .waktu_upload{
     color: grey;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 /*-------------------- Show Video --------------------*/

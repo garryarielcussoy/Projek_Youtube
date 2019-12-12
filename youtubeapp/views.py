@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from .models import Video
 from datetime import datetime
+import random
 
 # Create your views here.
 def index(request):
@@ -16,8 +17,17 @@ def show(request, video_id):
     tambah += 1
     video.jumlah_view = tambah
     video.save()
+
+    for konten in Video.objects.all():
+        if konten != video:
+            random_video = konten
+            random_number = random.randint(0,3)
+            if random_number == 1:
+                break
+
     kirim = {
-        'video' : video
+        'video' : video,
+        'random_video' : random_video
     }
     return render(request, 'youtubeapp/show.html', kirim)
 

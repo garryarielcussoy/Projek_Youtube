@@ -15,8 +15,8 @@
                     Up Next
                 </div>
                 <div>
-                    <a href="{% url 'youtubeapp:show' video.id%}">
-                        <img src="{{video.thumbnail}}" class="konten_video">
+                    <a href="{% url 'youtubeapp:show' random_video.id %}">
+                        <img src="{{random_video.thumbnail}}" class="konten_video">
                     </a>
                 </div>
                 <div class="col-md-12 video_kecil">
@@ -32,7 +32,7 @@
                 <h5 class="judul">
                     {{video.judul}}
                 </h5>
-                <div class=" row tanggal_padding justify-content-center align-items-center">
+                <div class="row tanggal_padding justify-content-center align-items-center">
                     <div class="col-md-8 justify-content-center align-items-center">
                         <ul class="header-nav list-unstyled">
                             <li>
@@ -49,7 +49,7 @@
                                 <img href="/" class="image_logo" src="{% static 'img/title/like.png' %}" alt="">
                             </li>
                             <li>
-                                <p class="waktu_upload_show"href="/">Views</p>
+                                <p class="waktu_upload_show"href="/">{{video.jumlah_view}} Views</p>
                             </li>
                             <li>
                                 <img href="/" class="image_logo" src="{% static 'img/title/dislike.png' %}" alt="">
@@ -86,8 +86,7 @@
                         </div>
                     </div>
                 </div>
-            <div class="col-4">
-            </div>
+            <div class="col-4"></div>
         </div>
     </div>
 {% endblock %}

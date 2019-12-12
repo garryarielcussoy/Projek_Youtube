@@ -10,6 +10,7 @@ class Video(models.Model):
     deskripsi = models.TextField(default='')
     thumbnail = models.CharField(max_length=200, default='')
     embed = models.CharField(max_length=200, default='')
+    jumlah_view = models.IntegerField(default=0)
 
     def __str__(self):
         return self.judul

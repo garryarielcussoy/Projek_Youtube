@@ -1,0 +1,40 @@
+{% extends 'youtubeapp/base.html' %}
+
+{% block title %}Youtube{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 halaman_upload_form">
+            <h2 class=judul_upload>Upload Your Video Here</h2>
+            <form method="POST" action="{% url 'youtubeapp:upload_selesai' %}">
+                {% csrf_token %}
+                <label for="judul">Judul</label><br />
+                <input type="text" name="judul" id="judul" class="input_box"><br /><br />
+    
+                <label for="url_video">URL Video</label><br />
+                <input type="text" name="url_video" id="url_video" class="input_box"><br /><br />
+    
+                <label for="author">Author</label><br />
+                <input type="text" name="author" id="author" class="input_box"><br /><br />
+    
+                <label for="foto_author">Foto Author</label><br />
+                <input name="foto_author" id="foto_author" class="input_box"><br /><br />
+    
+                <label for="deskripsi">Deskripsi</label><br />
+                <textarea rows="8" cols="45" type="text" name="deskripsi" id="deskripsi" class="input-box"></textarea><br /><br />
+    
+                <label for="thumbnail">Thumbnail</label><br />
+                <input type="text" name="thumbnail" id="thumbnail" class="input_box"><br /><br />
+    
+                <label for="embed">Embed</label><br />
+                <input type="text" name="embed" id="embed" class="input_box"><br /><br/>
+
+                <button type="submit" class="btn btn-danger">Upload</button>
+            </form>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

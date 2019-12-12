@@ -7,6 +7,7 @@ class Video(models.Model):
     author = models.CharField(max_length=200, default='')
     waktu_upload = models.DateTimeField('Waktu Upload')
     foto_author = models.CharField(max_length=200, default='')
+    deskripsi = models.TextField(default='')
 
     def __str__(self):
         return self.judul

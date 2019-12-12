@@ -1,25 +1,65 @@
 {% extends 'youtubeapp/base.html' %}
 
 {% block title %}Youtube{% endblock %}
-
+{% load static %}
 {% block content %}
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6 tampilan_video">
-                    <iframe width="612" height="315" src="{{video.embed}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h5>{{video.judul}}</h5>
-                    <p class="waktu_upload_show">{{video.waktu_upload}}</p>
+            <div class="col-8 tampilan_video">
+                    <iframe width="100%" height="100%" src="{{video.embed}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h5 class="judul">{{video.judul}}</h5>
+                    <div class="tanggal_padding row justify-content-center align-items-center">
+                        <div class="col-md-8 justify-content-center align-items-center">
+
+                            <ul class="header-nav list-unstyled">
+                                <li>
+                                    <p class="waktu_upload_show"href="/">Views</p>
+                                </li>
+                                <li>
+                                    <p class="waktu_upload_show">{{video.waktu_upload}}</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-md-4 justify-content-center align-items-center text-right">
+
+                                <ul class="header-nav list-unstyled">
+                                    <li>
+                                        <img href="/" class="image_logo" src="{% static 'img/title/like.png' %}" alt="">
+                                    </li>
+                                    <li>
+                                        <p class="waktu_upload_show"href="/">Views</p>
+                                    </li>
+                                    <li>
+                                        <img href="/" class="image_logo" src="{% static 'img/title/dislike.png' %}" alt="">
+                                    </li> 
+                                    <li>
+                                        <p class="waktu_upload_show">0</p>
+                                        
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
                     <div class="line"></div>
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-2 kolom_foto_author_show">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-1 kolom_foto_author_show justify-content-center align-items-center">
                                 <div class="bungkus-foto_show">
                                     <img class="foto_author" src="{{video.foto_author}}">
                                 </div>
                             </div>
-                            <div class="col-10 author_deskripsi">
-                                <div class="col-12 author_show">{{video.author}}</div>
+                            <div class="col-11 author_deskripsi">
+                                <div class="col-12 author_show">
+                                    {{video.author}}
+                                </div>
+                                <div>
+                                    <p class="desc-video">99K Subscriber</p>
+                                </div>
+                            </div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-1 justify-content-center align-items-center">
+                            </div>
+                            <div class="col-11 author_deskripsi">
                                 <div class="col-12 desc_show">
                                     <p class="desc-video">{{video.deskripsi}}</p>
                                 </div>
@@ -27,7 +67,7 @@
                         </div>
                     </div>
             </div>
-            <div class="col-3"></div>
+            <div class="col-4"></div>
         </div>
     </div>
 {% endblock %}

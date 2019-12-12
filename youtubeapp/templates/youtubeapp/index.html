@@ -5,19 +5,26 @@
 {% block content %}
     <div class="container">
         <div class="row">
-            {% for video in videos %}
+            <div class="col-12 playlist">Playlist</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% for video in kumpulan_video %}
                 <div class="col-3 kolom_video">
                     <img src="{{video.url_video}}" class="konten_video">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-3 foto_author">
+                            <div class="col-2 kolom_foto_author">
                                 <div class="bungkus-foto">
-                                    <img src="{{video.foto_author}}">
+                                    <img class="foto_author" src="{{video.foto_author}}">
                                 </div>
                             </div>
-                            <div class="col-9 judul">{{video.judul}}</div>
-                            <div class="col-6 author">{{video.author}}</div>
-                            <div class="col-6 waktu_upload">{{video.waktu_upload}}</div>
+                            <div class="col-10 judul_dan_author">
+                                <div class="col-12 judul">{{video.judul}}</div>
+                                <div class="col-6 author">{{video.author}}</div>
+                                <div class="col-6 waktu_upload">{{video.waktu_upload}}</div>
+                            </div>
                         </div>
                     </div>
                 </div>

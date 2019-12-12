@@ -1,8 +1,42 @@
+/*-------------------- Umum --------------------*/
+*{
+    font-family: sans-serif;
+}
+
 /*-------------------- Tempat Video --------------------*/
+.playlist{
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-top: 80px;;
+    padding-bottom: 40px;
+}
+
 .kolom_video{
-    background-color: aqua;
+    margin-bottom: 40px;
 }
 
 .konten_video{
     width: 100%;
+    height: 250px;
+}
+
+.foto_author{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 10px 0px;
+}
+
+.judul_dan_author{
+    padding: 10px 0 0 20px;
+    text-align: left;
+}
+
+.judul{
+    font-weight: 600;
+}
+
+.author, .waktu_upload{
+    color: grey;
+    font-size: 1em;
 }

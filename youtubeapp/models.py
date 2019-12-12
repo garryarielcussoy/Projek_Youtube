@@ -6,6 +6,7 @@ class Video(models.Model):
     url_video = models.CharField(max_length=200, default='')
     author = models.CharField(max_length=200, default='')
     tanggal_upload = models.DateTimeField('Waktu Upload')
+    foto_author = models.CharField(max_length=200, default='')
 
     def __str__(self):
         return self.judul

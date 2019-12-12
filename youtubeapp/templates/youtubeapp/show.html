@@ -20,9 +20,9 @@
                     </a>
                 </div>
                 <div class="col-md-12 video_kecil">
-                    <div class="judul_utama">{{video.judul}}</div>
-                    <div class="author">{{video.author}}</div>
-                    <div class="waktu_upload">{{video.jumlah_view}} Views<br />{{video.waktu_upload}}</div>
+                    <div class="judul_utama">{{random_video.judul}}</div>
+                    <div class="author">{{random_video.author}}</div>
+                    <div class="waktu_upload">{{random_video.jumlah_view}} Views<br />{{random_video.waktu_upload}}</div>
                 </div>
             </div>
         </div>  
@@ -36,7 +36,7 @@
                     <div class="col-md-8 justify-content-center align-items-center">
                         <ul class="header-nav list-unstyled">
                             <li>
-                                <p class="waktu_upload_show"href="/">Views</p>
+                                <p class="waktu_upload_show"href="/">{{video.jumlah_view}} Views</p>
                             </li>
                             <li>
                                 <p class="waktu_upload_show">{{video.waktu_upload}}</p>
@@ -49,13 +49,13 @@
                                 <img href="/" class="image_logo" src="{% static 'img/title/like.png' %}" alt="">
                             </li>
                             <li>
-                                <p class="waktu_upload_show"href="/">{{video.jumlah_view}} Views</p>
+                                <p class="waktu_upload_show"href="/">{{video.jumlah_view}} Likes</p>
                             </li>
                             <li>
                                 <img href="/" class="image_logo" src="{% static 'img/title/dislike.png' %}" alt="">
                             </li> 
                             <li>
-                                <p class="waktu_upload_show">0</p>
+                                <p class="waktu_upload_show">0 Dislike</p>
                             </li>
                         </ul>
                     </div>

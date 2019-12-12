@@ -1,3 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Roboto:100,100i,300,400,500&display=swap');
+
+/* font-family: 'Noto Sans', sans-serif;
+
+font-family: 'Roboto', sans-serif; */
+
+/*-------------------- Horizontal Header --------------------*/
+
+.header{
+    padding: 10px 0;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+}
+
+/*-------------------- Logo youtube --------------------*/
+.image_home{
+    max-width: 80%;
+
+
+/*-------------------- logo akun kanan --------------------*/
+}
+.image_logo{
+    height: 30px;
+    width: 30px;
+}
+.bar_log{
+    display: block;
+    text-align: end;
+}
+.bar_log img{
+    margin-right: 18px;
+}
+/*-------------------- Search bar --------------------*/
+
+.bar_search{
+    display:block ruby;
+}
+
+.form-control{
+    width: 500px !important;
+    height: 43px;
+}
+
+/*-------------------- Vertical Header --------------------*/
+.header_bawah{
+    padding-top: 79px ;
+}
+
+.ver_bar h3{
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold ;
+
+}
+.ver_header{
+    padding: 10px 0; 
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    height: 100%;
+}
+
+
+
 /*-------------------- Umum --------------------*/
 *{
     font-family: sans-serif;
@@ -11,8 +77,8 @@ body{
 .playlist{
     font-size: 1.2em;
     font-weight: 600;
-    padding-top: 100px;
-    padding-left: 32px;
+    padding-top: 15px;
+    padding-left: 30px;
     padding-bottom: 40px;
 }
 

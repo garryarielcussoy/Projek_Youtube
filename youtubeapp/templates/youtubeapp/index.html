@@ -15,14 +15,34 @@
         <div class="row">
             <div class="ver_header col-md-2">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-5 justify-content-center align-items-center text-center">
-                        <a href="{% url 'youtubeapp:index' %}"><img  class="image_logo" src="{% static 'img/title/kamera.png' %}" alt=""></a>
+
+                    <div class="tempat_logo col-md-5 justify-content-center align-items-center text-center">
+                        <a href="{% url 'youtubeapp:index' %}"><img  class="image_logo" src="{% static 'img/title/house.png' %}" alt=""></a>
                     </div>
                     <div class="col-md-7 ">
                         <div class="ver_bar">
-                            <a class="logo-home-verbar" href="{% url 'youtubeapp:index' %}"><h3>Home</h3></a>
+                            <a class="logo-home-verbar tempat_logo" href="{% url 'youtubeapp:index' %}"><h3>Home</h3></a>
                         </div>
                     </div>
+
+                    <div class="col-md-5 tempat_logo justify-content-center align-items-center text-center">
+                        <a href="{% url 'youtubeapp:upload' %}"><img  class="image_logo" src="{% static 'img/title/kamera.png' %}" alt=""></a>
+                    </div>
+                    <div class="col-md-7 ">
+                        <div class="ver_bar">
+                            <a class="logo-home-verbar tempat_logo" href="{% url 'youtubeapp:upload' %}"><h3>Upload</h3></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 tempat_logo justify-content-center align-items-center text-center">
+                        <a href="{% url 'youtubeapp:trending' %}"><img  class="image_logo" src="{% static 'img/title/trending.png' %}" alt=""></a>
+                    </div>
+                    <div class="col-md-7 ">
+                        <div class="ver_bar">
+                            <a class="logo-home-verbar tempat_logo" href="{% url 'youtubeapp:trending' %}"><h3>Trending</h3></a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -31,7 +51,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-2"></div>
-            <div class="col-10 playlist">Playlist</div>
+            <div class="col-10 playlist">Playlist
+                {% if message == '1' %}
+                 (Trending)
+                {% elif message == '2' %}
+                 (Search Result)
+                {% elif message == '3' %}
+                 (Search Result)<br /><br />Video Not Found
+                {% endif %}
+            </div>
         </div>
     </div>
     <div class="container-fluid">

@@ -3,34 +3,42 @@
 {% block title %}Youtube{% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12 playlist">Playlist</div>
+            <div class="col-2"></div>
+            <div class="col-10 playlist">Playlist</div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            {% for video in kumpulan_video %}
-                <div class="col-3 kolom_video">
-                    <a href="{% url 'youtubeapp:show' video.id%}">
-                        <img src="{{video.thumbnail}}" class="konten_video">
-                    </a>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-2 kolom_foto_author">
-                                <div class="bungkus-foto">
-                                    <img class="foto_author" src="{{video.foto_author}}">
+            <div class="col-2"></div>
+            <div class="col-10">
+                <div class="container-fluid">
+                    <div class="row">
+                        {% for video in kumpulan_video %}
+                        <div class="col-3 kolom_video">
+                            <a href="{% url 'youtubeapp:show' video.id%}">
+                                <img src="{{video.thumbnail}}" class="konten_video">
+                            </a>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-2 kolom_foto_author">
+                                        <div class="bungkus-foto">
+                                            <img class="foto_author" src="{{video.foto_author}}">
+                                        </div>
+                                    </div>
+                                    <div class="col-10 judul_dan_author">
+                                        <div class="col-12 judul">{{video.judul}}</div>
+                                        <div class="col-6 author">{{video.author}}</div>
+                                        <div class="col-6 waktu_upload">{{video.waktu_upload}}</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-10 judul_dan_author">
-                                <div class="col-12 judul">{{video.judul}}</div>
-                                <div class="col-6 author">{{video.author}}</div>
-                                <div class="col-6 waktu_upload">{{video.waktu_upload}}</div>
-                            </div>
                         </div>
+                        {% endfor %}
                     </div>
                 </div>
-            {% endfor %}
+            </div>
         </div>
     </div>
 {% endblock %}

@@ -54,6 +54,15 @@ font-family: 'Roboto', sans-serif; */
     padding-top: 79px ;
 }
 
+.logo-home-verbar:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.logo-home-verbar{
+    color: black;
+}
+
 .ver_bar h3{
     margin: 0;
     font-size: 15px;

@@ -16,11 +16,11 @@
             <div class="ver_header col-md-2">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-5 justify-content-center align-items-center text-center">
-                        <img  class="image_logo" src="{% static 'img/title/kamera.png' %}" alt="">
+                        <a href="{% url 'youtubeapp:index' %}"><img  class="image_logo" src="{% static 'img/title/kamera.png' %}" alt=""></a>
                     </div>
                     <div class="col-md-7 ">
                         <div class="ver_bar">
-                            <h3>Home</h3>
+                            <a class="logo-home-verbar" href="{% url 'youtubeapp:index' %}"><h3>Home</h3></a>
                         </div>
                     </div>
                 </div>

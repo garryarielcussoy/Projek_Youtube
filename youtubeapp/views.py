@@ -11,6 +11,10 @@ def index(request):
 
 def show(request, video_id):
     video = Video.objects.get(pk = video_id)
+    tambah = video.jumlah_view
+    tambah += 1
+    video.jumlah_view = tambah
+    video.save()
     kirim = {
         'video' : video
     }

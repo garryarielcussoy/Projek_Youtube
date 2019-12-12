@@ -69,8 +69,6 @@ font-family: 'Roboto', sans-serif; */
     height: 100%;
 }
 
-
-
 /*-------------------- Umum --------------------*/
 *{
     font-family: sans-serif;
@@ -112,14 +110,14 @@ body{
     text-align: left;
 }
 
-.judul{
+.judul_utama{
     font-weight: 600;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .author, .waktu_upload{
     color:rgb(96, 96, 96);
-    font-size: 1em;
+    font-size: 0.8em;
 }
 /*-------------------- Show Video --------------------*/
 

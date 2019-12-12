@@ -27,10 +27,7 @@ font-family: 'Roboto', sans-serif; */
     height: 30px;
     width: 30px;
 }
-/* .header-nav li img.image_logo a:hover{
-    color:rgb(255, 0, 0);
 
-} */
 .bar_log{
     display: block;
     text-align: end;
@@ -54,18 +51,28 @@ font-family: 'Roboto', sans-serif; */
     padding-top: 79px ;
 }
 
-.tempat_logo{
-    margin: 12px 0;
+.logo_ver{
+    margin-top:40px;
 }
 
 .logo-home-verbar:hover{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 0, 0);
 }
 
 .logo-home-verbar{
-    color: black;
+    color: rgb(33, 37, 41);
 }
+
+.logo-home-verbar h3{
+    margin: 15px 0;
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold ;
+
+
+}
+
 
 .ver_bar h3{
     margin: 0;
@@ -95,11 +102,13 @@ body{
 
 /*-------------------- Tempat Video --------------------*/
 .playlist{
-    font-size: 1.2em;
+    font-size: 20px;
     font-weight: 600;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
 }
 
 .kolom_video{
@@ -124,13 +133,18 @@ body{
 }
 
 .judul_utama{
-    font-weight: 600;
+    font-weight: 300;
     font-size: 0.9em;
+    font-family: 'Noto Sans', sans-serif;
+    color:rgb(33, 37, 41);
+    margin-bottom: 5px;
 }
 
 .author, .waktu_upload{
     color:rgb(96, 96, 96);
-    font-size: 0.6em;
+    font-size: 12px;
+    font-family: sans-serif;
+
 }
 /*-------------------- Show Video --------------------*/
 
@@ -141,6 +155,14 @@ body{
     margin-right: 0;
     padding-right: 5px;
     padding-left: 25px;
+}
+.up_next{
+    margin-left: 35px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+
 }
 
 .tampilan_video_pinggir{
@@ -156,15 +178,21 @@ body{
     margin-left: 35px;
 }
 
-.tampilan_akun{
-    margin: 0;
+.video_kecil{
+    margin-top: 15px;
+    margin-left: 35px;
+    padding: 0;
 }
 
+.tampilan_akun{
+    margin-bottom: 30px;
+}
 
 .judul{
     margin-top: 15px;
     margin-bottom: 5px;
     font-weight: 300;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .header-nav{
@@ -182,12 +210,13 @@ body{
 }
 .waktu_upload_show{
     color: rgb(96, 96, 96);
-    font-size: 0.9em;
+    font-size: 16px;
     margin-bottom: 0;
 }
 
 .line{
     border: 0.8px solid rgb(194, 194, 194);
+    margin-bottom: 15px;
 }
 
 .author_deskripsi{
@@ -198,7 +227,7 @@ body{
 .author_show{
     font-size: 1.25em;
     color:rgb(33, 37, 41);
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
 }
 

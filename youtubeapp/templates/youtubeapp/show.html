@@ -11,9 +11,19 @@
                 </div>
             </div> 
             <div class="col-md-4 tampilan_video_pinggir justify-content-center align-items-center">
-                <a href="{% url 'youtubeapp:show' video.id%}">
-                    <img src="{{video.thumbnail}}" class="konten_video">
-                </a>
+                <div class="up_next">
+                    Up Next
+                </div>
+                <div>
+                    <a href="{% url 'youtubeapp:show' video.id%}">
+                        <img src="{{video.thumbnail}}" class="konten_video">
+                    </a>
+                </div>
+                <div class="col-md-12 video_kecil">
+                    <div class="judul_utama">{{video.judul}}</div>
+                    <div class="author">{{video.author}}</div>
+                    <div class="waktu_upload">{{video.jumlah_view}} Views<br />{{video.waktu_upload}}</div>
+                </div>
             </div>
         </div>  
     <div class="container-fluid">
@@ -67,7 +77,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row justify-content-center align-items-center">
+                        <div class="row justify-content-center align-items-center mar">
                             <div class="col-1 justify-content-center align-items-center">
                             </div>
                             <div class="col-11 author_deskripsi">

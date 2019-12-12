@@ -12,7 +12,13 @@
         <div class="row">
             {% for video in kumpulan_video %}
                 <div class="col-3 kolom_video">
-                    <a href="{% url 'youtubeapp:show' video.id%}"><img src="http://i3.ytimg.com/vi/{{unik['video.judul']}}/hqdefault.jpg" class="konten_video"></a>
+                    <a href="{% url 'youtubeapp:show' video.id%}">
+                        {% for elemen in kumpulan_unik %}
+                        {% if kumpulan_unik.video == video %}
+                        <img src="http://i3.ytimg.com/vi/{{video.unik}}/hqdefault.jpg" class="konten_video">
+                        {% endif %}
+                        {% endfor %}
+                    </a>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-2 kolom_foto_author">

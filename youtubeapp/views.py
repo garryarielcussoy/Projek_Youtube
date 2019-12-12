@@ -13,6 +13,6 @@ def index(request):
 def show(request, video_id):
     video = Video.objects.get(pk = video_id)
     kirim = {
-        'video' : video,
+        'video' : video
     }
     return render(request, 'youtubeapp/show.html', kirim)

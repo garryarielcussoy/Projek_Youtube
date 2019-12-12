@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6 tampilan_video">
-                    <iframe width="612" height="315" src="https://www.youtube.com/embed/KEcUsSmAX9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="612" height="315" src="https://www.youtube.com/embed/{{unik}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <h5>{{video.judul}}</h5>
                     <p class="waktu_upload_show">{{video.waktu_upload}}</p>
                     <div class="line"></div>
@@ -20,8 +20,8 @@
                             </div>
                             <div class="col-10 author_deskripsi">
                                 <div class="col-12 author_show">{{video.author}}</div>
-                                <div class="col-12">
-                                    <p class="desc-video"></p>
+                                <div class="col-12 desc_show">
+                                    <p class="desc-video">{{video.deskripsi}}</p>
                                 </div>
                             </div>
                         </div>

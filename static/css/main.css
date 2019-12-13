@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Roboto:100,100i,300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap');
+
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+/* font-family: 'Noto Sans', sans-serif;
+
+font-family: 'Roboto', sans-serif; */
+
+/*-------------------- Horizontal Header --------------------*/
+
+.header{
+    padding: 10px 0;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+}
+
+/*-------------------- Logo youtube --------------------*/
+.image_home{
+    max-width: 80%;
+    
+
+
+/*-------------------- logo akun kanan --------------------*/
+}
+.image_logo{
+    height: 30px;
+    width: 30px;
+}
+
+.bar_log{
+    display: block;
+    text-align: end;
+}
+.bar_log img{
+    margin-right: 18px;
+}
+/*-------------------- Search bar --------------------*/
+
+.bar_search{
+    display:block ruby;
+}
+
+.form-control{
+    width: 500px !important;
+    height: 43px;
+}
+
+/*-------------------- Vertical Header --------------------*/
+.header_bawah{
+    padding-top: 79px ;
+}
+
+.logo_ver{
+    margin-top:40px;
+}
+
+.logo-home-verbar:hover{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+.logo-home-verbar{
+    color: rgb(33, 37, 41);
+}
+
+.logo-home-verbar h3{
+    margin: 15px 0;
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold ;
+
+
+}
+
+
+.ver_bar h3{
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold ;
+
+}
+.ver_header{
+    padding: 10px 0; 
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    height: 100%;
+}
+
+/*-------------------- Umum --------------------*/
+*{
+    font-family: sans-serif;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(249, 249, 249);
+
+}
+
+/*-------------------- Tempat Video --------------------*/
+.playlist{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+.kolom_video{
+    margin-bottom: 40px;
+}
+
+.konten_video{
+    width: 100%;
+    height: 200px;
+}
+
+.foto_author{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 10px 0px;
+}
+
+.judul_dan_author{
+    padding: 10px 0 0 20px;
+    text-align: left;
+}
+
+.judul_utama{
+    font-weight: 300;
+    font-size: 0.9em;
+    font-family: 'Noto Sans', sans-serif;
+    color:rgb(33, 37, 41);
+    margin-bottom: 5px;
+}
+
+.author, .waktu_upload{
+    color:rgb(96, 96, 96);
+    font-size: 12px;
+    font-family: sans-serif;
+
+}
+/*-------------------- Show Video --------------------*/
+
+.tampilan_video{
+    margin-top: 100px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 5px;
+    padding-left: 25px;
+}
+.up_next{
+    margin-left: 35px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+
+}
+
+.tampilan_video_pinggir{
+    margin-top: 100px;
+}
+
+.tampilan_video_pinggir img{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+}
+
+.video_kecil{
+    margin-top: 15px;
+    margin-left: 35px;
+    padding: 0;
+}
+
+.tampilan_akun{
+    margin-bottom: 30px;
+}
+
+.judul{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header-nav{
+    margin: 0;
+}
+
+.header-nav li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.tanggal_padding{
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.waktu_upload_show{
+    color: rgb(96, 96, 96);
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.line{
+    border: 0.8px solid rgb(194, 194, 194);
+    margin-bottom: 15px;
+}
+
+.author_deskripsi{
+    padding-left: 0;
+    color: rgb(96, 96, 96);
+}
+
+.author_show{
+    font-size: 1.25em;
+    color:rgb(33, 37, 41);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+}
+
+.desc-show{
+    padding:0 0px;
+    color: rgb(96, 96, 96);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.desc-video{
+    padding: 0 15px;
+    margin: 0;
+}
+
+.konten_show{
+    width: 50%;
+}
+
+/*-------------------- Upload --------------------*/
+.judul_upload{
+    margin-bottom: 30px;
+}
+
+.halaman_upload_form{
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom : 40px;
+}
+
+.input_box{
+    width: 80%;
+}

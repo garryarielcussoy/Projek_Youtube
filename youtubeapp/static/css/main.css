@@ -248,6 +248,11 @@ body{
     width: 50%;
 }
 
+.video_kecil .waktu_upload{
+    border-bottom: 0.8px solid rgb(194, 194, 194);
+    width: 90%;
+}
+
 /*-------------------- Upload --------------------*/
 .judul_upload{
     margin-bottom: 30px;

@@ -25,7 +25,7 @@ SECRET_KEY = '05l82o#+&06)$tdjdj8sd9=tt+&rkco#iu5x#^#d&vp(qvus(h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['youtubekw.pythonanywhere.com']
+ALLOWED_HOSTS = ['youtubekw.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
